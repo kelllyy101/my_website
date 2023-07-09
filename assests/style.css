@@ -1,53 +1,85 @@
 /* Reset some default styles for consistent rendering */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+header {
+  background-color: hotpink;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: hotpink;
+  padding: 10px;
+  text-align: center;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.summary {
+  text-align: center;
+}
+
+.photo {
+  text-align: center;
+}
+
+.photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .about-me {
+    flex-direction: row;
+    align-items: center;
   }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
+
+  .summary {
+    flex: 1;
+    text-align: left;
   }
-  
-  header {
-    background-color: hotpink;
+
+  .photo {
+    flex: 1;
+    text-align: right;
   }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-  }
-  
-  footer {
-    background-color: hotpink;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  /* Responsive styles */
-  @media (min-width: 768px) {
-    /* Add any specific styles for larger screens here */
-  }
-  
+}
