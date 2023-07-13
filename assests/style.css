@@ -10,7 +10,9 @@ body {
   background-color: white;
   color: #333; /* Dark gray text color */
 }
-
+h2 {
+  color: #ff69b4;
+}
 header {
   background-color: white;
 }
@@ -38,13 +40,6 @@ main {
 
 h1 {
   margin-bottom: 20px;
-  color: hotpink; /* Hot pink */
-}
-
-footer {
-  background-color: white;
-  padding: 10px;
-  text-align: center;
   color: hotpink; /* Hot pink */
 }
 
@@ -155,6 +150,22 @@ footer {
 .submit-button:hover {
   background-color: #ff69b4; /* Lighter shade of hot pink */
   transform: scale(1.1); /* Increase the size by 10% */
+}
+
+/*Footer*/
+footer {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  color: hotpink; /* Hot pink */
+}
+.social-icons a {
+  color: hotpink; /* Hot pink */
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: aqua; /* Aqua color on hover */
 }
 
 
